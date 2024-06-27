@@ -73,27 +73,11 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
-#about {
-    display: block;
-    text-align: left;
-    margin: 10px;
-    padding: 0; /* Set padding to 0 for responsiveness */
-    font-size: 30px;
-}
 
 @media screen and (max-width: 768px) {
     #mainimg {
         margin: 50px auto; /* Adjust margin for smaller screens */
-    }
 
-    #about {
-        font-size: 24px; /* Decrease font size for smaller screens */
-    }
-
-    #about img {
-        margin: 50px auto; /* Center the image */
-        max-width: 100%; /* Ensure the image does not exceed its original size */
-        height: auto; /* Maintain aspect ratio */
     }
 }
 
