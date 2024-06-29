@@ -68,19 +68,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove margins */
+    text-align: center;
+    overflow: hidden; /* Hide overflow */
+    background-color: #000; /* Set a background color matching the video */
+}
+
+#mainimg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire section */
+    background-color: #000; /* Set a background color matching the video */
+}
+
+/*#mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     max-width: 100%;
     height: auto;
     margin: 100px 40px; /* Top and bottom margin of 100px, 40px left and right margins */
-}
 
-#mainimg img {
-    width: auto; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
+
+/*#mainimg img {
+    width: 1152px; /* Adjust the width as needed 
+    height: auto; /* Adjust the height as needed 
     max-width: 100%;
-    transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
+    transition: opacity 0.5s ease-in-out; /* Add transition for opacity 
     opacity: 1;
-}
+}*/
 
 @media screen and (max-width: 768px) {
     #mainimg {
