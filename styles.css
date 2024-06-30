@@ -82,6 +82,13 @@ body {
     background-color: #000; /* Set a background color matching the video */
 }
 
+@media (max-width: 600px) {
+    #mainvideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /*#mainimg {
     display: flex;
     justify-content: center;
@@ -109,7 +116,7 @@ body {
 @media screen and (max-width: 480px) {
     #mainimg {
         margin: 30px auto; /* Further adjust margin for very small screens */
-        content: url('Untitled design (3)ph.png'); /* Replace with the path to your smaller image */
+       /* Replace with the path to your smaller image */
     }
 }
 
@@ -161,7 +168,7 @@ body {
     #about img {
         margin: 10px auto;
         max-width: 100%;
-    }
+    } 
 }
 
 @media screen and (max-width: 480px) {
@@ -277,48 +284,112 @@ body {
 
 .skills li {
     margin-bottom: 5px;
-}
+} 
 
+/* Basic Styles */
 #skills1 h1 {
     text-align: center;
     text-decoration: double;
     font-size: 60px;
 }
-@media screen and (max-width: 480px){
-    #skills1 h1{
+
+@media screen and (max-width: 480px) {
+    #skills1 h1 {
         font-size: 30px;
         text-align: center;
     }
-
 }
-
 
 #skills1 ol {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 #skills1 div ol li {
-    background-color: none;
     margin-bottom: 20px;
-}
-
-#skills1 div ol li img {
     transition: all 0.3s ease-in-out;
 }
 
-#skills1 .horizontal-list li img:hover {
-    animation: glow 1s infinite alternate;
+#skills1 div ol li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-@keyframes glow {
+#skills1 div ol li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(239, 234, 234, 0.5);
+}
+
+
+/* Different Hover Effects for Each Class */
+#skills1 div ol li img#Graphic-Design:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x rgba(89, 109, 181, 0.5);
+    animation: glow-blue 1s infinite alternate;
+}
+
+#skills1 div ol li img#snapshots:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(89, 181, 126, 0.5);
+    animation: glow-green 1s infinite alternate;
+}
+
+#skills1 div ol li img#highlights:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(232, 232, 20, 0.5);
+    animation: glow-yellow 1s infinite alternate;
+}
+
+#skills1 div ol li img#animations:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(149, 89, 181, 0.5);
+    animation: glow-purple 1s infinite alternate;
+}
+
+
+/* Keyframes for Different Colors */
+@keyframes glow-blue {
     0% {
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0px  5px  rgba(89, 109, 181, 0.5);
     }
     100% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        box-shadow: 0 0 20px rgba(89, 109, 181, 1);
     }
 }
+
+@keyframes glow-green {
+    0% {
+        box-shadow: 0 0 5px rgba(39, 86, 58, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgb(45, 220, 115);
+    }
+}
+
+@keyframes glow-yellow {
+    0% {
+        box-shadow: 0 0 5px rgba(232, 232, 20, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(232, 232, 20, 1);
+    }
+}
+
+@keyframes glow-purple {
+    0% {
+        box-shadow: 0 0 5px rgba(149, 89, 181, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(149, 89, 181, 1);
+    }
+}
+
 
 
 
