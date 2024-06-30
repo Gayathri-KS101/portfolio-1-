@@ -315,15 +315,12 @@ body {
 
 #skills1 div ol li img {
     display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
 
 #skills1 div ol li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(239, 234, 234, 0.5);
+   
 }
 
 
